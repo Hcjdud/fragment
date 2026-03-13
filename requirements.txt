@@ -1,0 +1,14 @@
+# Основные зависимости
+python-telegram-bot==20.7
+aiohttp==3.9.1
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Для работы с датами
+pytz==2023.3
+
+# Для логирования
+colorlog==6.7.0
+
+# Версия Python
+python_version>=3.9
