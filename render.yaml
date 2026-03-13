@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: fragment-monitor-bot
+    runtime: python
+    repo: https://github.com/yourusername/fragment-bot
+    plan: free
+    region: frankfurt
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    healthCheckPath: /health
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHANNEL_ID
+        value: @your_channel_name
+      - key: PYTHON_VERSION
+        value: 3.11.0
